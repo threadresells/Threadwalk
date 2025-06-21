@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ThreadWalk - Fashion for Every Step</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>ThreadWalk</h1>
+    <nav>
+      <a href="#">Men</a>
+      <a href="#">Women</a>
+      <a href="#">Shoes</a>
+      <a href="#">Accessories</a>
+      <a href="#">Cart</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Summer Collection - Up to 40% Off</h2>
+    <button>Shop Now</button>
+  </section>
+
+  <section class="products">
+    <h3>Trending Now</h3>
+    <div class="product-grid">
+      <div class="product">
+        <img src="https://via.placeholder.com/200" alt="Men's Set" />
+        <h4>Men's Casual Set</h4>
+        <p>$59.99</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/200" alt="Sneakers" />
+        <h4>Women's Platform Sneakers</h4>
+        <p>$89.99</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/200" alt="Jacket" />
+        <h4>Classic Denim Jacket</h4>
+        <p>$79.00</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <h3>Get 10% off your first order</h3>
+    <input type="email" placeholder="Enter your email" />
+    <button>Subscribe</button>
+  </section>
+
+  <footer>
+    <p>© 2025 ThreadWalk | <a href="#">Privacy Policy</a> | <a href="#">Contact Us</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  background: #ffd1dc;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.hero h2 {
+  margin-bottom: 20px;
+}
+
+.products {
+  padding: 40px 20px;
+  background: #fff;
+}
+
+.product-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.product {
+  background: #f1f1f1;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  width: 200px;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 15px;
+  margin-top: 10px;
+  background: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.newsletter {
+  text-align: center;
+  padding: 30px;
+  background: #eee;
+}
+
+.newsletter input {
+  padding: 10px;
+  margin-right: 10px;
+  width: 250px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: white;
+}
+document.querySelectorAll(".product button").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    alert("Added to cart!");
+  });
+});
